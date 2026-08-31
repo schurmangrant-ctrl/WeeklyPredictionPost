@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heisman Watch | Full 9 Yards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">FULL 9</span><span>Yards Matchup Studio</span></a>
+      <nav class="page-nav" aria-label="Studio pages"><a href="index.html">Weekly slate</a><a href="cfp-bracket.html">CFP bracket</a><a class="active" href="heisman.html">Heisman watch</a></nav>
+      <div class="topbar-meta"><span class="live-dot"></span> HEISMAN WATCH <span class="meta-divider"></span> 2026</div>
+    </header>
+
+    <main class="workspace">
+      <section class="intro-row">
+        <div>
+          <p class="eyebrow">COLLEGE FOOTBALL / AWARD TRACKER</p>
+          <h1>Heisman watch.</h1>
+          <p class="lede">A clean graphic board featuring the leading contenders and their numbers.</p>
+        </div>
+        <div class="date-control">
+          <label for="heismanDate">SEASON</label>
+          <input id="heismanDate" type="text" value="2026 • WEEK 5" aria-label="Heisman season">
+          <span class="schedule-status" id="heismanStatus">LIVE ODDS · 6 PLAYERS</span>
+        </div>
+      </section>
+
+      <section class="studio-grid heisman-layout">
+        <div class="board-panel">
+          <div class="panel-heading">
+            <div><span class="section-kicker">POST PREVIEW</span><h2>Heisman candidates</h2></div>
+            <span class="format-chip">1080 × 1350</span>
+          </div>
+          <div class="canvas-wrap">
+            <canvas id="heismanCanvas" width="1080" height="1350"></canvas>
+          </div>
+          <div class="canvas-footer"><span>FULL 9 YARDS / HEISMAN WATCH</span><span id="heismanPage">2026</span></div>
+        </div>
+
+        <aside class="control-panel">
+          <div class="control-heading"><div><span class="section-kicker">CANDIDATES</span><h2>Current odds</h2></div><span class="pick-count" id="candidateCount">6 / 6</span></div>
+          <div class="heisman-list" id="heismanList"></div>
+          <div class="heisman-summary">
+            <div class="heisman-summary-item"><span>Favorite</span><strong id="favoriteName">Travis Hunter</strong></div>
+            <div class="heisman-summary-item"><span>Best résumé</span><strong id="resumeName">Bo Nix</strong></div>
+            <div class="heisman-summary-item"><span>Most explosive</span><strong id="explosiveName">Jeremiah Smith</strong></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <script src="heisman.js"></script>
+</body>
+</html>
