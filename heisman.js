@@ -21,43 +21,43 @@ const candidates = [
   },
   {
     rank: 3,
-    name: 'Bo Nix',
-    school: 'Oregon',
+    name: 'Drew Allar',
+    school: 'Penn State',
     odds: '+420',
     position: 'QB',
-    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4567198.png',
-    color: '#154733',
-    stats: { passing: '3,540 yds', rushing: '145 yds', receiving: '—', td: '38', efficiency: '76.1%' }
+    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4687602.png',
+    color: '#0a1d54',
+    stats: { passing: '3,280 yds', rushing: '194 yds', receiving: '—', td: '31', efficiency: '72.8%' }
   },
   {
     rank: 4,
-    name: 'Jayden Daniels',
-    school: 'LSU',
+    name: 'Dylan Raiola',
+    school: 'Nebraska',
     odds: '+700',
     position: 'QB',
-    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4432813.png',
-    color: '#461d7c',
-    stats: { passing: '3,170 yds', rushing: '620 yds', receiving: '—', td: '36', efficiency: '77.5%' }
+    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/5086298.png',
+    color: '#d00027',
+    stats: { passing: '2,980 yds', rushing: '120 yds', receiving: '—', td: '27', efficiency: '69.5%' }
   },
   {
     rank: 5,
-    name: 'Carson Beck',
-    school: 'Georgia',
+    name: 'Cade Klubnik',
+    school: 'Clemson',
     odds: '+1100',
     position: 'QB',
-    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4432608.png',
-    color: '#ba0c2f',
-    stats: { passing: '3,420 yds', rushing: '111 yds', receiving: '—', td: '31', efficiency: '72.8%' }
+    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/5082301.png',
+    color: '#f56600',
+    stats: { passing: '3,110 yds', rushing: '332 yds', receiving: '—', td: '29', efficiency: '71.6%' }
   },
   {
     rank: 6,
-    name: 'Quinshon Judkins',
-    school: 'Ohio State',
+    name: 'Ryan Williams',
+    school: 'Alabama',
     odds: '+1600',
-    position: 'RB',
-    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4689819.png',
-    color: '#bb1e2d',
-    stats: { passing: '—', rushing: '1,372 yds', receiving: '286 yds', td: '21', efficiency: '6.1 ypc' }
+    position: 'WR',
+    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/5073564.png',
+    color: '#9e1b32',
+    stats: { passing: '—', rushing: '—', receiving: '1,166 yds', td: '15', efficiency: '24.1 ypr' }
   }
 ];
 
@@ -68,7 +68,7 @@ const resumeName = document.getElementById('resumeName');
 const explosiveName = document.getElementById('explosiveName');
 
 favoriteName.textContent = candidates[0].name;
-resumeName.textContent = 'Bo Nix';
+resumeName.textContent = 'Drew Allar';
 explosiveName.textContent = 'Jeremiah Smith';
 
 function renderCandidates() {
@@ -129,7 +129,7 @@ function drawHeismanGraphic() {
 
   ctx.fillStyle = '#101311';
   ctx.font = '500 18px DM Mono';
-  ctx.fillText('WEEK 5 | 2026', 72, 305);
+  ctx.fillText('WEEK 5 | 2026-27', 72, 305);
 
   ctx.strokeStyle = '#bbbdb4';
   ctx.lineWidth = 2;
@@ -205,7 +205,7 @@ function drawHeismanGraphic() {
   ctx.font = '800 32px Barlow Condensed';
   ctx.fillText('HEISMAN RACE', 72, 1302);
   ctx.font = '500 16px DM Mono';
-  ctx.fillText('LIVE ODDS / 2026', 790, 1302);
+  ctx.fillText('2026-27 ODDS', 790, 1302);
 }
 
 renderCandidates();
