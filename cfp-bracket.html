@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CFP Bracket | Full 9 Yards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">FULL 9</span><span>Yards Matchup Studio</span></a>
+      <nav class="page-nav" aria-label="Studio pages"><a href="index.html">Weekly slate</a><a class="active" href="cfp-bracket.html">CFP bracket</a></nav>
+      <div class="topbar-meta"><span class="live-dot"></span> CFP BRACKET <span class="meta-divider"></span> 2026</div>
+      <button class="icon-button" id="resetButton" title="Reset picks" aria-label="Reset picks">↺</button>
+    </header>
+
+    <main class="workspace">
+      <section class="intro-row">
+        <div>
+          <p class="eyebrow">COLLEGE FOOTBALL / POSTSEASON</p>
+          <h1>Build the bracket.</h1>
+          <p class="lede">A new Full 9 Yards graphic generator is coming together here.</p>
+        </div>
+        <div class="date-control">
+          <label for="seasonYear">SEASON</label>
+          <input id="seasonYear" type="number" value="2026" min="2020" max="2100">
+          <span class="schedule-status" id="scheduleStatus">12 TEAMS · 11 GAMES</span>
+        </div>
+      </section>
+
+      <section class="studio-grid">
+        <div class="board-panel">
+          <div class="panel-heading">
+            <div><span class="section-kicker">POST PREVIEW</span><h2>CFP bracket</h2></div>
+            <span class="format-chip">1080 × 1350</span>
+          </div>
+          <div class="canvas-wrap"><canvas id="bracketCanvas" width="2160" height="2700"></canvas></div>
+          <div class="canvas-footer"><span>FULL 9 YARDS / CFP BRACKET</span><span id="canvasPage">2026</span></div>
+        </div>
+
+        <aside class="control-panel">
+          <div class="seed-editor"><span class="section-kicker">PLAYOFF FIELD</span><h2>Choose the 12 teams</h2><div id="teamSelectors"></div></div>
+          <div class="control-heading"><div><span class="section-kicker">YOUR CALLS</span><h2>Pick the winners</h2></div><span class="pick-count" id="pickCount">0 / 11</span></div>
+          <div class="bracket-rounds" id="matchupList"></div>
+          <button class="export-button" id="exportButton"><span>Export image</span><b>↓</b></button>
+          <p class="export-note">PNG export · ready for Instagram</p>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <script src="playoff.js"></script>
+</body>
+</html>
