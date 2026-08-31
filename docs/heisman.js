@@ -11,23 +11,23 @@ const candidates = [
   },
   {
     rank: 2,
-    name: 'Bo Nix',
-    school: 'Oregon',
-    odds: '+260',
-    position: 'QB',
-    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4567198.png',
-    color: '#154733',
-    stats: { passing: '3,540 yds', rushing: '145 yds', receiving: '—', td: '38', efficiency: '76.1%' }
-  },
-  {
-    rank: 3,
     name: 'Jeremiah Smith',
     school: 'Ohio State',
-    odds: '+500',
+    odds: '+260',
     position: 'WR',
     photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/5158625.png',
     color: '#bb1e2d',
     stats: { passing: '—', rushing: '—', receiving: '1,248 yds', td: '17', efficiency: '28.7 ypr' }
+  },
+  {
+    rank: 3,
+    name: 'Bo Nix',
+    school: 'Oregon',
+    odds: '+420',
+    position: 'QB',
+    photo: 'https://a.espncdn.com/i/headshots/college-football/players/full/4567198.png',
+    color: '#154733',
+    stats: { passing: '3,540 yds', rushing: '145 yds', receiving: '—', td: '38', efficiency: '76.1%' }
   },
   {
     rank: 4,
