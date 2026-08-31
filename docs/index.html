@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F9Y Matchup Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">FULL 9</span><span>Yards Matchup Studio</span></a>
+      <nav class="page-nav" aria-label="Studio pages"><a class="active" href="index.html">Weekly slate</a><a href="cfp-bracket.html">CFP bracket</a></nav>
+      <div class="topbar-meta"><span class="live-dot"></span> WEEK <span id="headerWeekNumber">00</span> <span class="meta-divider"></span> AUG 2026</div>
+      <button class="icon-button" id="resetButton" title="Reset picks" aria-label="Reset picks">↺</button>
+    </header>
+
+    <main class="workspace">
+      <section class="intro-row">
+        <div>
+          <p class="eyebrow">COLLEGE FOOTBALL / WEEKLY PREDICTIONS</p>
+          <h1>Build the board.</h1>
+          <p class="lede">Pick your winners, then export a clean slate for Saturday.</p>
+          <a class="bracket-link" href="cfp-bracket.html">Open CFP Bracket <span>→</span></a>
+        </div>
+        <div class="date-control">
+          <label for="gameDate">WEEK OF (MONDAY)</label>
+          <input id="gameDate" type="date" value="2026-08-29">
+          <span class="schedule-status" id="scheduleStatus">LOADING SCHEDULE...</span>
+        </div>
+      </section>
+
+      <section class="studio-grid">
+        <div class="board-panel">
+          <div class="panel-heading">
+            <div><span class="section-kicker">POST PREVIEW</span><h2>Saturday slate <span id="pageLabel">01 / 01</span></h2></div>
+            <span class="format-chip">1080 × 1350</span>
+          </div>
+          <div class="canvas-wrap"><canvas id="postCanvas" width="1080" height="1350"></canvas></div>
+          <div class="canvas-footer"><span>FULL 9 YARDS / WEEKLY PREDICTION</span><span id="canvasPage">SLATE 00</span></div>
+        </div>
+
+        <aside class="control-panel">
+          <div class="control-heading"><div><span class="section-kicker">YOUR CALLS</span><h2>Who takes it?</h2></div><span class="pick-count" id="pickCount">0 / 8</span></div>
+          <div class="matchup-list" id="matchupList"></div>
+          <div class="pagination" id="pagination"></div>
+          <button class="export-button" id="exportButton"><span>Export image</span><b>↓</b></button>
+          <p class="export-note">PNG export · ready for Instagram</p>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
